@@ -1,3 +1,10 @@
+
+/* Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+
 /* ------------------------------------------------- */
 /* Checker                                           */
 /* ------------------------------------------------- */
@@ -15,10 +22,25 @@
 /* ------------------------------------------------- */
 /* Styles                                            */
 /* ------------------------------------------------- */
-.container {
+@font-face {
+    font-family: "Main title";
+    src: url(../fonts/Lato-Hairline.ttf) format("truetype");
+ }
+
+ body {
+    padding: 1rem;
+ }
+ 
+ @font-face {
+    font-family: Text;
+    src: url(../fonts/Lato-Light.ttf) format("truetype");
+ }
+ 
+ .container {
     width: 800px;
-    margin: 0 auto;
-}
+    margin: auto;
+    font-family: Text, sans-serif;
+ }
 
 header {
     display: flex;
@@ -37,6 +59,22 @@ header {
     text-align: right;
     text-transform: uppercase; 
  }
+
+ .title > h1 {
+    font-family: "Main title", sans-serif;
+    font-size: 2.5rem;
+    color: #bcbbbb;
+ }
+
+ .title > h3 {
+    font-size: small;
+ }
+
+ h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #bcbbbb;
+ }
  .items-container {
     display: flex;
     justify-content: space-between;
@@ -44,4 +82,34 @@ header {
 
  .item {
     text-align: center;
+ }
+
+ .item > h3 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: #747704;
+ }
+
+ .item > a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: smaller;
+    color: #747704;
+ }
+
+
+
+ hr {
+    border: thin solid #bcbbbb;
+    margin-bottom: 1.5rem;
+ }
+
+ h2 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+ }
+
+ .title > h1 {
+    padding-top: 0.5rem;
  }
