@@ -1,115 +1,127 @@
-
 /* Reset */
 * {
-    margin: 0px;
-    padding: 0px;
- }
-
-/* ------------------------------------------------- */
-/* Checker                                           */
-/* ------------------------------------------------- */
-#checker-button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ------------------------------------------------- */
+  /* Checker                                           */
+  /* ------------------------------------------------- */
+  #checker-button {
     position: fixed;
     bottom: 0;
     right: 0;
     z-index: 100;
-}
-
-/* * {
-    outline: 1px solid red !important;
-} */
-
-/* ------------------------------------------------- */
-/* Styles                                            */
-/* ------------------------------------------------- */
-@font-face {
-    font-family: "Main title";
+  }
+  
+  /* ------------------------------------------------- */
+  /* Styles                                            */
+  /* ------------------------------------------------- */
+  @font-face {
+    font-family: "Lato";
     src: url(../fonts/Lato-Hairline.ttf) format("truetype");
- }
-
- body {
-    padding: 1rem;
- }
- 
- @font-face {
-    font-family: Text;
+    font-weight: 100; /* Hairline */
+  }
+  
+  @font-face {
+    font-family: "Lato";
     src: url(../fonts/Lato-Light.ttf) format("truetype");
- }
- 
- .container {
-    width: 800px;
+    font-weight: 300; /* Light */
+  }
+  
+  body {
+    padding: 1rem;
+  }
+  
+  .container {
+    max-width: 800px;
     margin: auto;
-    font-family: Text, sans-serif;
- }
-
-header {
+    font-family: "Lato", sans-serif;
+  }
+  
+  header {
     display: flex;
- }
- 
- .logo {
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .logo {
     flex: 1;
- }
-   
- .title {
-   flex: 4;
- }
-
- .title {
+  }
+  
+  .title {
     flex: 4;
     text-align: right;
-    text-transform: uppercase; 
- }
-
- .title > h1 {
-    font-family: "Main title", sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .title > h1 {
+    font-family: "Lato";
+    font-weight: 100; /* Hairline */
     font-size: 2.5rem;
     color: #bcbbbb;
- }
-
- .title > h3 {
+    padding-top: 0.5rem;
+  }
+  
+  .title > h3 {
     font-size: small;
- }
-
- h2 {
+  }
+  
+  h2 {
     font-size: 1.6rem;
     font-weight: bold;
     color: #bcbbbb;
- }
- .items-container {
+    padding: 1rem 0.5rem 0.5rem; /* Consolidated padding */
+  }
+  
+  .items-container {
     display: flex;
     justify-content: space-between;
- }
-
- .item {
+  }
+  
+  .item {
     text-align: center;
- }
-
- .item > h3 {
+  }
+  
+  .item > h3 {
     text-transform: uppercase;
     font-size: 1.6rem;
     color: #747704;
- }
-
- .item > a {
+  }
+  
+  .item > a {
     text-decoration: none;
     font-weight: bold;
     font-size: smaller;
     color: #747704;
- }
-
-
-
- hr {
+  }
+  
+  hr {
     border: thin solid #bcbbbb;
     margin-bottom: 1.5rem;
- }
-
- h2 {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
- }
-
- .title > h1 {
-    padding-top: 0.5rem;
- }
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .items-container {
+      flex-direction: column;
+    }
+  
+    .item {
+      width: 200px;
+      margin: auto;
+      padding-bottom: 1rem;
+    }
+  
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+    }
+  
+    .logo {
+      padding-top: 1.1rem;
+    }
+  }
+  
