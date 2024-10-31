@@ -1,5 +1,5 @@
 # Ejercicios
-
+Soluciones en el repo: https://github.com/gustavojuan/Proyecto2
 
 En el commit commit e2ed2654d8845674fcef4cc6c24a2f32c076f469 
 ## ¿Se está aplicando BEM Methodology en el Proyecto 2? Justifica tu respuesta indicando ejemplos de por qué se está utilizando o no.
